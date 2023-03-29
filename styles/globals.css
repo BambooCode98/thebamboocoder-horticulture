@@ -157,6 +157,7 @@ path{
   justify-content: space-between;
   align-items: center;
   padding: 3% 2%;
+  border-bottom: 1px solid white;
 }
 
   .title{
@@ -269,7 +270,7 @@ path{
 
   .home-title, .home-title2{
     color: #ffffff;
-    background-color: #2000206b;
+    background-color: #180118c0;
     width: 75%;
     padding: 5%;
     /* border: 5px solid red; */
@@ -445,19 +446,20 @@ path{
 .about-hero{
   background-image: url('/images/about-hero-image.png');
   /* height: 100vh; */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
 }
 
 
 .about-box2 {
-  background-color: #00000042;
+  background-color: #00000059;
   /* margin: 7%; */
   /* width: 75%; */
-  backdrop-filter: blur(3px);
-  background-color: #0000008a;
+  backdrop-filter: blur(5px);
+  /* background-color: #0000008a; */
 
 }
 
@@ -482,7 +484,7 @@ path{
 }
 
 .about-title{
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 .about-vp{
@@ -723,12 +725,14 @@ label{
 @media (min-width: 750px) {
   .home-title, .home-title2{
     color: #ffffff;
-    background-color: #2000206b;
+    background-color: #180118c0;
     width: 75%;
-    padding: 2%;
+    padding: 2% 8%;
     /* border: 5px solid red; */
     border-radius: 2px;
     /* font-weight: 100; */
+    font-size: 1.3em;
+
   }
 
   .home-intro{
@@ -737,6 +741,8 @@ label{
     background-image: linear-gradient(to right,rgba(32, 0, 32, 1),rgba(32, 0, 32, 0));
     width: 75%;
     padding: 2%;
+    font-size: 1.3em;
+  
   }
 
   .n1{
@@ -763,7 +769,7 @@ label{
   .about-mypic{
     height: 200px;
     width: 200px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* position: absolute; */
   }
 
