@@ -2,7 +2,6 @@
 
 
 
-
 /* -------------------------
   MAIN CONTENT STYLES
 -------------------------- */
@@ -13,7 +12,7 @@
   margin: 0;
   text-decoration: none;
   color: black;
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 
 body, html{
@@ -76,7 +75,7 @@ path{
 
 .post-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
   justify-content: center;
   /* grid-auto-flow: column; */
   /* align-items: center; */
@@ -84,8 +83,16 @@ path{
   /* border: 1px solid red; */
   /* height: min-content; */
   padding: 2% 5%;
+  
+  
+}
 
-
+.post-container2{
+  height: 600px;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .post-con2{
@@ -162,14 +169,16 @@ path{
 
   .title{
     /* border: 1px solid rgb(0, 0, 255); */
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
+    font-size: 2em;
     width: 150%;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .the-title{
     color: #ffffff;
   }
-
+  
   .b-title{
     color: #0f860f;
   }
@@ -183,6 +192,7 @@ path{
   color: white;
   justify-content: space-between;
   padding-left: 20%;
+  list-style-type: none;
   /* gap: 10px; */
   /* width: 25%; */
   /* border: #ffffff 2px solid; */
@@ -235,7 +245,7 @@ path{
   .magGlass{
     position: absolute;
     right: 8px;
-    top: -8px;
+    top: 5px;
     /* padding-right: 50px; */
     /* padding: 1px; */
   }
@@ -248,13 +258,47 @@ path{
     color: #0f860f;
   }
 
+  .footer-signup{
+    /* width: 700px; */
+    /* padding-right: 50px; */
+    /* height: 100px; */
+    margin-top: 25px;
+  }
+
+  .footer-sbutton{
+    width: 0;
+    height: 0;
+    border: none;
+  }
+
 /* -------------------------
   HOME PAGE STYLES
 -------------------------- */
 
   .home-p{
     color: white;
-    padding: 2%;
+    /* padding-left: 50%; */
+    list-style-type: none;
+    display: flex;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    gap: 30px;
+    /* padding-left: 300px; */
+    /* width: 500px; */
+    /* margin-left: 10px; */
+    /* height: 1000px; */
+    /* position: relative;
+    left: 5%; */
+    padding-left: 25px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    /* background: linear-gradient(to right,#0f860f, #0f860f00); */
+    /* z-index: 99; */
+    /* position: relative; */
   }
 
   .home-hero-img{
@@ -263,29 +307,77 @@ path{
     background-size: cover;
     background-position: center;
     height: 550px;
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     /* justify-content: left; */
     /* align-items: center; */
+    padding-top: 25px;
+    gap: 15px;
+
   }
 
-  .home-title, .home-title2{
+  .home-title, .home-title2,.home-title3,.home-title4,.home-title5{
     color: #ffffff;
-    background-color: #180118c0;
+    background-color: #0f860fb7;
+    /* background-color: #180118ea; */
     width: 75%;
-    padding: 5%;
+    padding: 2.5%;
+    /* padding: 5%; */
+    /* padding-top: 50px; */
+    /* position: absolute; */
     /* border: 5px solid red; */
     border-radius: 2px;
     /* font-weight: 100; */
   }
 
-  .home-title2{
+  .home-title{
+    /* position: absolute; */
+    top: 15%;
+  }
+
+  .home-title3{
+    /* position: absolute; */
     margin-left: 25%;
+    top: 25%;
+    background-color: #800080b7;
+  }
+
+  .home-title4{
+    /* position: absolute; */
+    top: 40%;
+  }
+
+  .home-title5{
+    /* position: absolute; */
+    top: 50%;
+    margin-left: 25%;
+    background-color: #800080b7;
+
+  }
+  
+  .home-title2{
+    /* position: absolute; */
+    top: 65%;
+    background-color: #0f860fd3;
+    /* margin-left: 10%; */
+    width: 100%;
+  }
+
+  .homepage-link1{
+    color: #000000;
+    
+    /* color: #43b45b; */
+  }
+
+  .homepage-link1:hover{
+    color: #448144;
   }
 
   .home-middle-content{
     background-color: #0f860f;
     height: 450px;
     position: relative;
+    /* overflow: hidden; */
   }
   
   .home-featured-posts{
@@ -307,30 +399,141 @@ path{
   }
 
   .home-i-container{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* position: absolute; */
+    display: inline-block;
+    white-space: nowrap;
+    overflow: auto;
+    /* justify-content: center;
+    align-items: center; */
     /* border: 1px red solid; */
-    height: 450px;
+    /* height: 450px; */
     top: 0;
     width: 100%;
   }
 
+  .recent-posts{
+    /* position: relative;
+    height: 350px; */
+    /* background: linear-gradient(to right, #0f4386, #0f860f00);
+    z-index: 55; */
+  }
+  
+  .home-post-card{
+    width: 100%;
+    /* position: relative; */
+    /* height: 0.5em; */
+    /* padding-left: 1%; */
+    margin-top: 1.5rem;
+    /* border: 1px red solid; */
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    display: inline-block;
+    /* z-index: 0;
+    position: relative; */
+  }
+  
+  .home-card-thumb{
+    height: 250px;
+    position: relative;
+    z-index: 0;
+  }
 
+  .home-card-info{
+    padding-top: 5px;
 
+  }
+  
+  .home-card-title{
+    text-overflow: ellipsis;
+    width: 50%;
+    font-size: 0.8em;
+  }
+
+  .go-right{
+    /* background-image: radial-gradient(circle,#000000c4,#00000000, #0f860f00); */
+    height: 375px;
+    position: absolute;
+    z-index: 99;
+    width: 200px;
+    top: 47.4px;
+    right: -85px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .scrollcontainer {
+    /* margin: 0 auto;
+    height: 10em;
+    width: 40em;
+    border: 1px solid #ccc; */
+    
+    /* --background-color: rgba(255, 255, 255, 1); */
+    --background-color: #0f860f;
+    --shadow-color: #000000bb;
+    --shadow-size: 2em;
+    --transparent: #ffffff00;
+    /* We can't use "transparent" directly, because Safari would interpret the color as "transparent black" (see https://css-tricks.com/thing-know-gradients-transparent-black/). Using this workaround, it works fine. */
+  }
+  
+  .scrollcontainer--horizontal {
+    overflow-x: scroll;
+
+    background:
+      linear-gradient(to right, var(--background-color), var(--background-color), var(--transparent) calc(var(--shadow-size) * 2)),
+      radial-gradient(farthest-side at 0 50%, var(--shadow-color), var(--transparent)),
+      linear-gradient(to left, var(--background-color), var(--background-color), var(--transparent) calc(var(--shadow-size) * 2)),
+      radial-gradient(farthest-side at 100% 50%, var(--shadow-color), var(--transparent)) 100%;
+    background-color: var(--background-color);
+    background-repeat: no-repeat;
+    background-attachment: local, scroll, local, scroll;
+    background-size: 100% 100%, var(--shadow-size) 100%, 100% 100%, var(--shadow-size) 100%;
+    height: 100%;
+  }
+
+  .test1{
+    /* width: 90%; */
+    /* background: linear-gradient(to left, #0f860f, #00000000); */
+  }
+  
+  /* .scrollcontainer--horizontal .scrollcontainer__content {
+    white-space: nowrap;
+  } */
+  
+  .home-right-button{
+    border: none;
+    color: white;
+    font-size: 25px;
+    background: none;
+  }
+
+  .home-right-button:hover{
+    cursor: pointer;
+  }
+
+  .home-subscribe{
+    height: 575px;
+    background-image: url('/images/home-middle2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* -------------------------
   POST/BLOG -- WHERE PAGINATION IS -- PAGE STYLES
 -------------------------- */
   .post-block{
-    padding: 5%;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
     width: 100%;
+    padding-top: 10%;
   }
   
   .post-title{
@@ -417,6 +620,7 @@ path{
     text-decoration: underline;
     font-size: 1.3em;
     margin-bottom: 5%;
+    list-style-type: none;
   }
 
   .link-con{
@@ -430,6 +634,64 @@ path{
 
   .not-current-link:hover, .page-link:hover{
     color:#825d85;
+  }
+
+  .blog-clist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    justify-content: center;
+    list-style-type: none;
+    /* gap: 15px; */
+    /* padding: 5px; */
+  }
+
+  .blog-card{
+    border: 1px rgb(0, 0, 0) solid;
+    /* padding: 15px; */
+    height: 350px;
+  }
+
+  .blog-card:hover{
+    
+  }
+  
+  .blog-card-bg2{
+    width: 100%;
+    background-image: linear-gradient(#0f860f,#0f860f8a);
+    display: flex;
+    padding: 5px;
+    border-bottom: 1.5px solid #800080;
+    flex-direction: column;
+  }
+
+  .blog-ctitle{
+    color: white;
+  }
+
+  .blog-cpara{
+    color: white;
+    padding-left: 15px;
+  }
+
+
+  .cb{
+    background-image: url('/images/category_images/bamboo.png');
+    background-size: cover;
+  } 
+
+  .cf{
+    background-image: url('/images/category_images/forestry.png');
+    background-size: cover;
+  }
+  
+  .cg{
+    background-image: url('/images/category_images/gardening.png');
+    background-size: cover;
+  } 
+  
+  .ch{
+    background-image: url('/images/category_images/horticulture.png');
+    background-size: cover;
   }
 
 	@media (max-width: 767px) {
@@ -552,7 +814,7 @@ input, .button, .form-title{
 -------------------------- */
 
 .contact-container{
-  background-image: url('/images/dandelion_attr_cropped.png');
+  background-image: url('/images/about-hero-image.png');
   background-size: cover;
   background-repeat: no-repeat;
   /* display: flex;
@@ -582,6 +844,7 @@ input, .button, .form-title{
 .c-list{
   display: flex;
   flex-direction: column;
+  list-style-type: none;
   /* gap: 10px; */
 }
 
@@ -649,6 +912,14 @@ label{
   padding: 0 7%;
 }
 
+.c-linkin-color path{
+  color: #0072b1;
+}
+
+.c-pin-color path{
+  color: #E72B1C;
+}
+
 
 
 /* -------------------------
@@ -660,7 +931,7 @@ label{
   width: 100%;
   position: absolute;
   z-index: 99;
-  top: 60px;
+  top: 90px;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -723,15 +994,29 @@ label{
 -------------------------- */
 
 @media (min-width: 750px) {
-  .home-title, .home-title2{
+
+  .footer{
+    padding: 3% 2%;
+  }
+
+  .home-hero-img{
+    /* padding-left: 25px; */
+  }
+
+  .home-title, .home-title2,.home-title3,.home-title4,.home-title5{
     color: #ffffff;
-    background-color: #180118c0;
-    width: 75%;
-    padding: 2% 8%;
+    background-color: #0f860fdc;
+    width: 50%;
+    padding: 1.5%;
     /* border: 5px solid red; */
     border-radius: 2px;
     /* font-weight: 100; */
     font-size: 1.3em;
+
+  }
+
+  .home-title3, .home-title5{
+    background-color: #800080dc;
 
   }
 
@@ -750,12 +1035,17 @@ label{
   }
 
   .post-block{
-    padding: 15%;
+    padding: 10%;
   }
 
   .post-thumbnail{
     /* width: 80%; */
     height: 500px;
+  }
+
+  .blog-card{
+    border: 1px red black;
+    height: 550px;
   }
 
   .card-thumb{
@@ -810,7 +1100,11 @@ label{
   }
 
   .post-block{
-    padding: 5% 25%;
+    padding: 5% 20%;
+  }
+
+  .post-card{
+    padding: 0% 3%;
   }
 
   .post-title{

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@formspree/react": "^2.4.1",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@next/font": "13.1.6",
@@ -17,15 +18,20 @@
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "github-markdown-css": "^5.1.0",
+    "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
     "katex": "^0.16.4",
+    "markdown-it-attrs": "^4.1.6",
     "next": "13.1.6",
     "nextjs-google-analytics": "^2.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.5",
     "react-syntax-highlighter": "^15.5.0",
+    "rehype-attr": "^2.1.4",
     "rehype-katex": "^6.0.2",
+    "rehype-slug-custom-id": "^1.1.0",
+    "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1"
   },
   "devDependencies": {

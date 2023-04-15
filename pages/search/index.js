@@ -13,10 +13,9 @@ export default function Search({posts}) {
   
   let results = [];
   function search() {
-
+    console.log(searchQuery.value);
     posts.map((post,index) => {
-      
-      if(post.frontmatter.excerpt.includes(searchQuery.value) || post.frontmatter.title.includes(searchQuery.value) || post.frontmatter.date.includes(searchQuery.value)) {
+      if(post.frontmatter.excerpt.includes(searchQuery.value) || post.frontmatter.title.includes(searchQuery.value) || post.frontmatter.date.includes(searchQuery.value) || post.content.includes(searchQuery.value)) {
         results.push(post);
       }
     })
@@ -28,16 +27,30 @@ export default function Search({posts}) {
 
   return (
     <>
-      <h1 className='blog-title'>Search Results - {results.length}</h1>
-      <div className='post-container'>
-        {results.map((post,index) => {
-          return(
-            <div key={index}>
-              <Post post={post}/>
-            </div>
-          )
-        })}
-      </div>
+      {results.length !== 0 ? 
+        <>
+          <h1 className='blog-title'>Search Results - {results.length}</h1>
+          <div className='post-container'>
+            {results.map((post,index) => {
+              return(
+                <div key={index}>
+                  <Post post={post}/>
+                </div>
+              )
+            })}
+          </div>
+        </> :
+        <>
+          <h1 className='blog-title'>
+            Search Results - {results.length}
+          </h1>
+          <div className='post-container2'>
+            <p>No Articles Found.</p>
+          </div>
+        </>
+      
+    
+      }
     
     
     
@@ -63,11 +76,12 @@ export async function getStaticProps() {
 
     //get front matter
     const frontMatter = fs.readFileSync(path.join('posts', file), 'utf-8')
-    const {data: frontmatter} = matter(frontMatter);
+    const {data: frontmatter, content} = matter(frontMatter);
 
     return {
       slug,
       frontmatter,
+      content
     }
   })
 

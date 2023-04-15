@@ -5,10 +5,11 @@ import Link from 'next/link';
 
 export default function Footer() {
   const [value,setValue] = useState('');
-
+  let lower = value.toLowerCase();
+  // console.log(lower);
 
   function handleSubmit(e) {
-    e.preventDefault();
+    // e.preventDefault();
     // setValue('')
     
   }
@@ -24,10 +25,15 @@ export default function Footer() {
             pathname: '/search',
             query: {value},
           }} className='mag-con'>
-            <FontAwesomeIcon icon={faMagnifyingGlass} className='magGlass'/>
+            <button className='footer-sbutton'>
+              <FontAwesomeIcon icon={faMagnifyingGlass} className='magGlass'/>
+            </button>
           </Link>
         </div>
       </form>
+      <div className='footer-signup'>
+      
+      </div>
     </footer>
   )
 }

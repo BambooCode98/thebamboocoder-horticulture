@@ -1,6 +1,8 @@
 import React from 'react'
 import { useForm, ValidationError } from '@formspree/react';
 import Head from 'next/head';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faPinterest } from '@fortawesome/free-brands-svg-icons';
 
 
 function ContactForm() {
@@ -74,17 +76,17 @@ export default function Contact() {
           <h1 className='contact-title'>Contact Information</h1>
           <p className='c-p'>You can find me on these platforms:</p>
           <ul className='c-list'>
-            <li className='c-l'>
+            {/* <li className='c-l'>
               <a href='https://github.com/BambooCode98' className='c-a'>Github - BambooCode98</a>
-            </li>
+            </li> */}
             <li className='c-l'>
-              <a href='https://www.linkedin.com/in/james-thomas-860181238/' className='c-a'>LinkedIn</a>
+              <a href='https://www.linkedin.com/in/james-thomas-860181238/' className='c-a'><span><FontAwesomeIcon icon={faLinkedin} size='2xl' className='c-linkin-color'/></span> - LinkedIn - James Thomas</a>
             </li>
-            <li className='c-l'>
+            {/* <li className='c-l'>
               <a href='https://www.youtube.com/@TheBambooCoder' className='c-a'>Youtube - The Bamboo Coder</a>
-            </li>
+            </li> */}
             <li className='c-l'>
-              <a href='https://pin.it/3A3jX5Z' className='c-a'>Pinterest - The Bamboo Coder</a>
+              <a href='https://pin.it/3A3jX5Z' className='c-a'><span><FontAwesomeIcon icon={faPinterest} size='2xl' className='c-pin-color'/></span> - Pinterest - The Bamboo Coder</a>
             </li>
             
             {/* <li>Giithub: BambooCode98</li> */}

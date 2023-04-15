@@ -1,12 +1,18 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import React from 'react'
 
-export default function Post({post,pages}) {
+export default function Post({post,pages,category}) {
+  // console.log(post.frontmatter.category);
+  console.log(pages);
+  const router = useRouter();
+
+
   return (
     <div>
       
         <div className="post-card">
-          <Link href={`/blog/post/${post.slug}`} className='post-link' >
+          <Link href={`/blog/${post.frontmatter.category}/${router.query.id}/${post.slug}`} className='post-link' >
             <img src={post.frontmatter.image} alt={post.slug}className='card-thumb'/>
             <div className='card-info'>
               <h2 className='card-title'>{post.frontmatter.title}</h2>

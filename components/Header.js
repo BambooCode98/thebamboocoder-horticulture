@@ -63,8 +63,8 @@ export default function Header() {
                     <li className='mob-n1' onClick={() => showMenu()}>About</li>
                   </Link>
       
-                  <Link href="/blog/1">
-                    <li className='mob-n1' onClick={() => showMenu()}>Blog</li>
+                  <Link href="/blog">
+                    <li className='mob-n1' onClick={() => showMenu()}>Blogs</li>
                   </Link>
       
                   <Link href="/contact">
@@ -84,8 +84,8 @@ export default function Header() {
                 <li className='n1'>About</li>
               </Link>
 
-              <Link href="/blog/1">
-                <li className='n1'>Blog</li>
+              <Link href="/blog">
+                <li className='n1'>Blogs</li>
               </Link>
 
               <Link href="/contact">
