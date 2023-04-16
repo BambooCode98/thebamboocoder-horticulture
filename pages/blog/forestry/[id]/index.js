@@ -58,7 +58,7 @@ export default function Id({posts,pages}) {
 
 export async function getStaticPaths() {
   // console.log(array,'llllllllllllllllllll');
-  const files = fs.readdirSync(path.join('posts'));
+  const files = fs.readdirSync(path.join('forestry'));
   let filenum = files.length;
   // console.log(files.length);
   // console.log(filenum, '<- file count');
@@ -83,7 +83,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps() {
   //get files from posts folder
-  const files = fs.readdirSync(path.join('posts'));
+  const files = fs.readdirSync(path.join('forestry'));
 
   //get slug and front matter from posts
 
@@ -92,15 +92,15 @@ export async function getStaticProps() {
     const slug = file.replace('.md', '');
 
     //get front matter
-    const frontMatter = fs.readFileSync(path.join('posts', file), 'utf-8')
+    const frontMatter = fs.readFileSync(path.join('forestry', file), 'utf-8')
     const {data: frontmatter} = matter(frontMatter);
-
     return {
       slug,
       frontmatter,
     }
   })
-
+  
+  console.log(posts);
   let filelength = files.length;
   // let maxArt = 5;
   function checkpageCount(max,fcount) {

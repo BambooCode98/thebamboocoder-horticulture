@@ -77,7 +77,7 @@ export default function PostsPage({frontMatter,content,post}) {
 
 export async function getStaticPaths() {
   // console.log(params,'get static');
-  const files = fs.readdirSync(path.join('posts'));
+  const files = fs.readdirSync(path.join('bamboo'));
   let filelength = files.length;
   // let maxArt = 5;
   function checkpageCount(max,fcount) {
@@ -106,28 +106,38 @@ export async function getStaticPaths() {
   }
 
   // console.log(paggenum, 'pages here');
-
+  const totalPaths = [];
   //each page(number) is a new array of pages, 2 so far, need to combine
-  const testpaths = pages.map(page => {
-    const newFilePaths = files.map(filename => ({
+  // const testpaths = pages.map(page => {
+  //   const newFilePaths = files.map(filename => ({
+  //     params: {
+  //       id: `${page}`,
+  //       post: `${filename.replace('.md','')}`
+  //     }
+  //   }))
+  //   console.log(newFilePaths, 'newfilepaths hereeeeeee!!!!');
+  //   totalPaths = concat(newFilePaths)
+  // })
+  pages.forEach(page => {
+    totalPaths.push(files.map(filename => ({
       params: {
         id: `${page}`,
         post: `${filename.replace('.md','')}`
       }
-    }))
-    console.log(newFilePaths, 'newfilepaths hereeeeeee!!!!');
-    return newFilePaths
+    })))
+    // console.log(newFilePaths, 'newfilepaths hereeeeeee!!!!');
   })
 
-  const paths = files.map(filename => ({
-    params: {
-      id: `${1}`,
-      post: `${filename.replace('.md', '')}`
-    }
-  }))
+  // const paths = files.map(filename => ({
+  //   params: {
+  //     id: `${1}`,
+  //     post: `${filename.replace('.md', '')}`
+  //   }
+  // }))
 
   // console.log(pages);
-  console.log(paths, 'paths ends here555555', testpaths[1]);
+  const paths = totalPaths.flat();
+  console.log(paths, 'paths ends here555555', totalPaths.flat());
 
   return {
     paths,
@@ -139,7 +149,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params: {post} }) {
   // console.log(params.context);
   // console.log(post);
-  const markdownContent = fs.readFileSync(path.join('posts', post + '.md'), 'utf-8')
+  const markdownContent = fs.readFileSync(path.join('bamboo', post + '.md'), 'utf-8')
   const {data: frontMatter, content} = matter(markdownContent);
 
 

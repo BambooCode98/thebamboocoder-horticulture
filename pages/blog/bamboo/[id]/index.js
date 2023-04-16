@@ -93,7 +93,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps() {
   //get files from posts folder
-  const files = fs.readdirSync(path.join('posts'));
+  const files = fs.readdirSync(path.join('bamboo'));
 
   //get slug and front matter from posts
   
@@ -102,7 +102,7 @@ export async function getStaticProps() {
     const slug = file.replace('.md', '');
 
     //get front matter
-    const frontMatter = fs.readFileSync(path.join('posts', file), 'utf-8')
+    const frontMatter = fs.readFileSync(path.join('bamboo', file), 'utf-8')
     const {data: frontmatter} = matter(frontMatter);
     
     return {

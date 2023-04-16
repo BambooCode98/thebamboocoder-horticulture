@@ -4,7 +4,6 @@ import React from 'react'
 
 export default function Post({post,pages,category}) {
   // console.log(post.frontmatter.category);
-  console.log(pages);
   const router = useRouter();
 
 

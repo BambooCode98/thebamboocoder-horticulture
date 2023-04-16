@@ -130,7 +130,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: {post} }) {
-  // console.log(params.context);
+  console.log(post);
   // console.log(post);
   const markdownContent = fs.readFileSync(path.join('posts', post + '.md'), 'utf-8')
   const {data: frontMatter, content} = matter(markdownContent);
