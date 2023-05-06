@@ -1,4 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+// import GoogleAnalytics from '@/components/GoogleAnalytics'
+
 
 export default function Document() {
   return (
@@ -8,6 +10,8 @@ export default function Document() {
         <meta name="description" content="Learn about generative art and AI with javascript and Python." />
         <meta name="keywords" content="Generative Art, AI, Deep Learning, Machine Learning, Learn to Code" />
         <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+        <meta name="description" content="The Bamboo Coder aims to be a home for all things bamboo, while offering articles covering topics on forestry, horticulture, and gardening." />
+        <meta  name="keywords" content="Bamboo, Forestry, Horticulture,Gardening"/>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>

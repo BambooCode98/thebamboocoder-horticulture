@@ -1,0 +1,141 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/LohvczCMopVT8D-yEBHl-/_buildManifest.js",
+    "static/LohvczCMopVT8D-yEBHl-/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/pages/index-10e020a2fdf6b3e4.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/css/37787cdf560fb628.css",
+      "static/chunks/pages/_app-881985b2da656f2f.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/pages/_error-3da997b0775f9822.js"
+    ],
+    "/about": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/pages/about-fbca07301320dc5a.js"
+    ],
+    "/blog": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/pages/blog-9ab20d95bc196bd6.js"
+    ],
+    "/blog/[category]/[post]": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/267-79f9248eeef56a77.js",
+      "static/chunks/pages/blog/[category]/[post]-6302c0dcfb0f8a5d.js"
+    ],
+    "/blog/bamboo/[id]": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/pages/blog/bamboo/[id]-ce6a9cd14d32ed14.js"
+    ],
+    "/blog/bamboo/[id]/[post]": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/267-79f9248eeef56a77.js",
+      "static/chunks/902-0de5ce6805e3bc50.js",
+      "static/chunks/pages/blog/bamboo/[id]/[post]-1e74678108ec76f7.js"
+    ],
+    "/blog/forestry/[id]": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/pages/blog/forestry/[id]-7296e78c4edf05d5.js"
+    ],
+    "/blog/forestry/[id]/[post]": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/267-79f9248eeef56a77.js",
+      "static/chunks/902-0de5ce6805e3bc50.js",
+      "static/chunks/pages/blog/forestry/[id]/[post]-748e4c392523cc29.js"
+    ],
+    "/blog/gardening/[id]": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/pages/blog/gardening/[id]-8ea81e6301f73665.js"
+    ],
+    "/blog/gardening/[id]/[post]": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/267-79f9248eeef56a77.js",
+      "static/chunks/902-0de5ce6805e3bc50.js",
+      "static/chunks/56-35dbbbe2ce631b40.js",
+      "static/chunks/pages/blog/gardening/[id]/[post]-e92fd553613b8d51.js"
+    ],
+    "/blog/horticulture/[id]": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/pages/blog/horticulture/[id]-b2d7dafd4aab5ca8.js"
+    ],
+    "/blog/horticulture/[id]/[post]": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/267-79f9248eeef56a77.js",
+      "static/chunks/902-0de5ce6805e3bc50.js",
+      "static/chunks/pages/blog/horticulture/[id]/[post]-ca715200a67b3dfe.js"
+    ],
+    "/contact": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/2cca2479-1710919feda36b9f.js",
+      "static/chunks/pages/contact-5a64ad90467a213f.js"
+    ],
+    "/disclaimer": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/pages/disclaimer-1d12a045ed760d0c.js"
+    ],
+    "/privacy-policy": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/pages/privacy-policy-2812af26d47603c1.js"
+    ],
+    "/search": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/pages/search-932002d71b26621b.js"
+    ],
+    "/terms-and-conditions": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5020794388548d5e.js",
+      "static/chunks/pages/terms-and-conditions-5425ad0153e22a84.js"
+    ]
+  },
+  "ampFirstPages": []
+}

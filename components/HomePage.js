@@ -45,7 +45,7 @@ export default function HomePage({posts}) {
         </h4>
       </div>
       <div className='home-middle-content'>
-        <h3 className='home-intro'>Recent Posts</h3>
+        <h3 className='home-intro'>Featured Posts</h3>
         <div className='home-i-container'>
           {/* <div></div> */}
           {/* <div className='test1'></div> */}

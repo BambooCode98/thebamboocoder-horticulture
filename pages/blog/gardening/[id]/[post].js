@@ -11,6 +11,8 @@ import {useRouter} from 'next/router';
 import remarkGfm from 'remark-gfm';
 import GithubSlugger from 'github-slugger'
 import rehypeSlug from 'rehype-slug-custom-id';
+import remarkDirective from 'remark-directive';
+import { directive } from 'micromark-extension-directive';
 
 let maxArticlesPerPage = 5;
 let addOne = 1;
@@ -64,7 +66,7 @@ export default function PostsPage({frontMatter,content,post}) {
         </div>
         <img src={frontMatter.image} alt="post Image" width="300" height="250" className='post-thumbnail'/>
         <ReactMarkDown className="markdown-body"
-          remarkPlugins={[remarkGfm]}
+          remarkPlugins={[remarkGfm,remarkDirective]}
           rehypePlugins={[rehypeSlug]}
         >
           {content}

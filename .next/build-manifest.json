@@ -15,11 +15,6 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -35,15 +30,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/blog.js"
     ],
-    "/blog/horticulture/[id]": [
+    "/blog/bamboo/[id]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/blog/horticulture/[id].js"
+      "static/chunks/pages/blog/bamboo/[id].js"
     ],
-    "/blog/horticulture/[id]/[post]": [
+    "/blog/bamboo/[id]/[post]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/blog/horticulture/[id]/[post].js"
+      "static/chunks/pages/blog/bamboo/[id]/[post].js"
+    ],
+    "/blog/gardening/[id]/[post]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/blog/gardening/[id]/[post].js"
     ]
   },
   "ampFirstPages": []

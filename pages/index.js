@@ -22,8 +22,8 @@ export default function Home({posts}) {
     <>
       <Head>
         <title>The Bamboo Coder</title>
-        <meta name="description" content="Find help here with solving a problem growing plants, starting a garden, or getting guidance with an outdoor project. " />
-        <meta name="keywords" content="Horticulture, Plants, Garden, Gardens, Gardening, Consulting" />
+        <meta name="description" content="Find help here with solving a problem growing plants, or starting a garden." />
+        {/* <meta name="keywords" content="Horticulture, Plants, Garden, Gardens, Gardening" /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <link rel="icon" href="" /> */}
       </Head>

@@ -32,7 +32,19 @@ export default function Footer() {
         </div>
       </form>
       <div className='footer-signup'>
-      
+          <ul className='footer-legalstuff'>
+            <li>
+              <Link href="/terms-and-conditions" className='footer-li'>Terms & Conditions</Link>
+            </li>
+            
+            <li>
+              <Link href="/privacy-policy" className='footer-li2'> Privacy Policy</Link>
+            </li>
+            
+            <li>
+              <Link href="/terms-and-conditions#disclaimer" className='footer-li3'>Disclaimer</Link>
+            </li>
+          </ul>
       </div>
     </footer>
   )

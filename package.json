@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -14,6 +14,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@next/font": "13.1.6",
+    "client-only": "^0.0.1",
     "disqus-react": "^1.1.5",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
@@ -22,6 +23,7 @@
     "gray-matter": "^4.0.3",
     "katex": "^0.16.4",
     "markdown-it-attrs": "^4.1.6",
+    "micromark-extension-directive": "^2.2.0",
     "next": "13.1.6",
     "nextjs-google-analytics": "^2.3.0",
     "react": "18.2.0",
@@ -31,11 +33,14 @@
     "rehype-attr": "^2.1.4",
     "rehype-katex": "^6.0.2",
     "rehype-slug-custom-id": "^1.1.0",
+    "remark-attr": "^0.11.1",
+    "remark-directive": "^2.0.1",
     "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
+    "@types/gtag.js": "^0.0.12",
     "autoprefixer": "^10.4.13"
   }
 }

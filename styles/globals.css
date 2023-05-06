@@ -15,6 +15,10 @@
   /* list-style-type: none; */
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body, html{
   background-color: #ffffff;
   overflow-x: hidden;
@@ -269,6 +273,34 @@ path{
     width: 0;
     height: 0;
     border: none;
+  }
+
+  .footer-legalstuff{
+    color: white;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    /* padding-top: 5px; */
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  .footer-li, .footer-li2, .footer-li3{
+    color: white;
+    font-size: 0.9em;
+  }
+  
+  .footer-li, .footer-li2{
+    padding-right: 4px;
+    border-right: white solid 1px;
+  }
+
+  .footer-li2, .footer-li3{
+    padding-left: 4px;
+  }
+
+  .footer-li:hover, .footer-li2:hover, .footer-li3:hover{
+    text-decoration: underline;
   }
 
 /* -------------------------
@@ -604,9 +636,20 @@ path{
 		min-width: 200px;
 		max-width: 980px;
 		margin: 0 auto;
-		padding: 45px;
+		/* padding: 45px; */
     background-color: white !important;
+    /* padding: 0 5%; */
+    width: 100%;
 	}
+
+  .markdown-body img{
+    max-height: 550px;
+  }
+
+  .markdownbody table{
+    float: left;
+    margin-right: 10px;
+  }
 
   pre{
     background-color: white !important;
@@ -696,7 +739,7 @@ path{
 
 	@media (max-width: 767px) {
 		.markdown-body {
-			padding: 15px;
+			/* padding: 15px; */
 		}
 	}
 
@@ -1038,9 +1081,30 @@ label{
     padding: 10%;
   }
 
+  /* .post-title{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .post-container{
+    padding-left: 15%;
+    padding-right: 15%;
+  } */
+
   .post-thumbnail{
     /* width: 80%; */
     height: 500px;
+  }
+
+  .markdown-body img{
+    /* max-width: 75%; */
+    max-height: 450px;
+  }
+
+  .markdown-body table{
+    /* background-color: #0f860f71; */
+    /* float: left; */
+    /* margin-right: 10px; */
   }
 
   .blog-card{
@@ -1049,7 +1113,7 @@ label{
   }
 
   .card-thumb{
-    height: 380px;
+    height: 300px;
   }
 
   .about-pic-container, .about-vp, .about-form{
@@ -1178,24 +1242,98 @@ label{
 
 
 /* -------------------------
-  
+  DISCLAIMER
+-------------------------- */
+
+.policy-container{
+  padding: 5%;
+}
+
+
+/* -------------------------
+  TERMS & CONDITIONS
+-------------------------- */
+
+
+
+
+/* -------------------------
+  PRIVACY POLICY
 -------------------------- */
 
 
 
 /* -------------------------
-  
+  COOKIE BANNER
 -------------------------- */
 
+.cook-banner{
+  position: fixed;
+  width: 90%;
+  background: #0f860f;
+  z-index: 999;
+  bottom: 10px;
+  display: flex;
+  height: 125px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  padding-top: 10px;
+  /* margin-bottom: 10px; */
+  text-align: center;
+  left: 5%;
+}
 
+.cook-container{
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.cook-text{
+  /* width: 75%; */
+  margin-right: 15px;
+  font-size: 0.9em;
+}
 
-/* -------------------------
-  
--------------------------- */
+.cook-button-con{
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 10px; */
+  /* padding-bottom: 10px; */
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  /* width: 25%; */
+}
 
+.cook-button{
+  background: #800080;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 125px;
+  color: white;
+}
 
+.cook-button:hover{
+  cursor: pointer;
+  background-color: #3f0a3f;
+}
 
-/* -------------------------
-  
--------------------------- */
+.cook-link{
+  color: white;
+}
+
+.cook-link:hover{
+  text-decoration: underline;
+}
+
+@media (min-width: 1000px) {
+  .cook-banner{
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+  }
+}
